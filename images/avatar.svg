@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="KAI WORKS 運営者のイラスト">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e9f7fe"/>
+      <stop offset="1" stop-color="#b7e1f6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="500" fill="url(#bg)"/>
+  <circle cx="330" cy="90" r="60" fill="#ffffff" opacity="0.45"/>
+  <circle cx="60" cy="150" r="34" fill="#ffffff" opacity="0.35"/>
+  <circle cx="352" cy="300" r="22" fill="#38bdf8" opacity="0.25"/>
+
+  <!-- shoulders / shirt -->
+  <path d="M30 500 C30 410 100 366 200 366 C300 366 370 410 370 500 Z" fill="#2c3e5a"/>
+  <path d="M30 500 C30 410 100 366 200 366 C150 380 120 430 118 500 Z" fill="#243450"/>
+  <path d="M170 366 L200 424 L230 366 Z" fill="#161f33"/>
+  <path d="M150 360 L200 430 L188 366 Z" fill="#3a4f72"/>
+  <path d="M250 360 L200 430 L212 366 Z" fill="#3a4f72"/>
+
+  <!-- neck -->
+  <path d="M168 300 L168 372 C180 392 220 392 232 372 L232 300 Z" fill="#efc29b"/>
+  <path d="M168 330 C190 352 210 352 232 330 L232 300 L168 300 Z" fill="#dcA682" opacity="0.55"/>
+
+  <!-- ears -->
+  <ellipse cx="114" cy="244" rx="14" ry="22" fill="#f3cba6"/>
+  <ellipse cx="286" cy="244" rx="14" ry="22" fill="#f3cba6"/>
+
+  <!-- head -->
+  <path d="M200 128 C140 128 112 176 112 232 C112 296 152 332 200 332 C248 332 288 296 288 232 C288 176 260 128 200 128 Z" fill="#f7d6b6"/>
+
+  <!-- hair -->
+  <path d="M104 238 C88 150 142 92 204 92 C268 92 316 150 296 238 C292 204 278 178 256 164 C236 182 188 176 160 154 C140 176 118 196 104 238 Z" fill="#1c2432"/>
+  <path d="M138 120 L122 84 L166 108 Z" fill="#1c2432"/>
+  <path d="M186 100 L198 62 L224 100 Z" fill="#1c2432"/>
+  <path d="M232 100 L266 74 L270 118 Z" fill="#1c2432"/>
+  <path d="M158 112 C176 100 204 98 222 104" fill="none" stroke="#38455c" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- eyebrows -->
+  <path d="M154 212 Q172 202 192 210" fill="none" stroke="#1c2432" stroke-width="6" stroke-linecap="round"/>
+  <path d="M208 210 Q228 202 246 212" fill="none" stroke="#1c2432" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- smiling eyes -->
+  <path d="M158 238 Q173 222 190 238" fill="none" stroke="#1c2432" stroke-width="6" stroke-linecap="round"/>
+  <path d="M210 238 Q227 222 242 238" fill="none" stroke="#1c2432" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- nose -->
+  <path d="M200 246 Q194 262 204 264" fill="none" stroke="#d9a37e" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- cheeks -->
+  <ellipse cx="152" cy="268" rx="15" ry="9" fill="#f1a29a" opacity="0.5"/>
+  <ellipse cx="248" cy="268" rx="15" ry="9" fill="#f1a29a" opacity="0.5"/>
+
+  <!-- mouth -->
+  <path d="M168 280 Q200 322 232 280 Q200 290 168 280 Z" fill="#7b2f2f"/>
+  <path d="M174 282 Q200 292 226 282 Q222 294 200 296 Q178 294 174 282 Z" fill="#ffffff"/>
+</svg>
