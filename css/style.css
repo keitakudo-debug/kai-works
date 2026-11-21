@@ -551,3 +551,84 @@ button { font-family: inherit; cursor: pointer; }
   .floating-cta { display: inline-block; }
   .contact-form { padding: 24px; }
 }
+
+/* ================= 3D（トップ画面・制作実績） ================= */
+.pc-only { display: inline; }
+.hero-visual { min-height: 440px; }
+.hero3d-canvas {
+  position: absolute;
+  inset: -40px -60px;
+  width: calc(100% + 120px);
+  height: calc(100% + 80px);
+  display: block;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  pointer-events: none;
+}
+/* 3Dが動く環境では、今までのパソコン・スマホの絵と入れ替える */
+.has-3d .hero3d-canvas { opacity: 1; }
+.has-3d .hero-visual .mockup-laptop,
+.has-3d .hero-visual .mockup-phone { display: none; }
+
+.works3d { margin-bottom: 24px; }
+.work3d-card {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.work3d-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-card-hover); }
+.work3d-stage {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background:
+    radial-gradient(circle at 50% 40%, #ffffff 0%, rgba(255,255,255,0) 60%),
+    linear-gradient(160deg, #eaf3fb 0%, #dbeafe 100%);
+}
+.work3d-stage canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.work3d-fallback {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 56px;
+  transition: opacity 0.4s;
+}
+.work3d-stage.is-ready .work3d-fallback { opacity: 0; }
+.work3d-body { padding: 24px 26px 28px; }
+.work3d-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-blue);
+  background: rgba(29, 78, 216, 0.08);
+  padding: 3px 12px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+.work3d-body h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+.work3d-body p { color: var(--color-text-muted); font-size: 14.5px; }
+
+@media (max-width: 960px) {
+  .hero-visual { min-height: 360px; }
+  .hero3d-canvas { inset: -20px -24px; width: calc(100% + 48px); height: calc(100% + 40px); }
+}
+@media (max-width: 720px) {
+  .pc-only { display: none; }
+  .hero-visual { min-height: 300px; margin-top: 8px; }
+}
